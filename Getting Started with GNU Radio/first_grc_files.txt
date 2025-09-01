@@ -1,0 +1,6 @@
+In this directory, you can find some examples to help you understand how GNU Radio works. These examples,
+along with others, can be found at: https://wiki.gnuradio.org/index.php?title=Tutorials
+When you save and run the examples in GNU Radio, they generate two files: one with the .grc extension and
+another with the .py extension.
+
+I hope these examples help you take your first steps with this software.
