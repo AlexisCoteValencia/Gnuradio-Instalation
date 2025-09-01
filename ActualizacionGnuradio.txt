@@ -1,0 +1,15 @@
+sudo apt update
+sudo apt install git cmake g++ libboost-all-dev \
+    libgmp-dev swig python3-numpy python3-mako \
+    python3-sphinx python3-lxml doxygen \
+    libfftw3-dev libcomedi-dev libsdl1.2-dev \
+    libgsl-dev libqwt-qt5-dev libqt5opengl5-dev \
+    python3-pyqt5 python3-sip-dev \
+    liblog4cpp5-dev libzmq3-dev
+git clone https://github.com/gnuradio/gnuradio.git
+cd gnuradio/
+mkdir build && cd build 
+cmake ..
+make -j$(nproc)
+sudo make install
+sudo ldconfig
